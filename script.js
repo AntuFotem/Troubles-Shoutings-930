@@ -8,7 +8,7 @@ formulario.addEventListener('submit', (event) => {
   const contrasena = document.getElementById('contrasena').value;
 
   // Validación básica (reemplazar)
-  if (usuario === "admin" && contrasena === "1234") {
+  if (usuario === "admin" && contrasena === "6AkIBtoZvJ") {
     // Obtener datos de usuario (ejemplo ficticio)
     const nombreUsuario = "Juan Pérez";
     const datosUsuario = JSON.stringify({ // Serializar datos en formato JSON
