@@ -1,0 +1,75 @@
+/* Estilo general de la página */
+body {
+  font-family: arial; /* Letra cursiva */
+  background-image: url('imagen.jpg'); /* Imagen de fondo (reemplaza con la URL de tu imagen) */
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center; /* Posiciona la imagen en el centro */
+  height: 100vh; /* Altura del 100% del viewport */
+  display: flex; /* Contenedor flexbox */
+  align-items: center; /* Alinea verticalmente en el centro */
+  justify-content: center; /* Alinea horizontalmente en el centro */
+}
+
+.titulo-centrado {
+    display: flex;
+    color: #0a0707; /* Rojo */
+    text-shadow:2px 2px 4px #fcfcfc;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según tu diseño */
+  }
+
+  .titulo-centrado {
+    position: absolute;
+    top: 30px; /* Posiciona en la parte superior */
+    left: 50%; /* Posiciona en el centro horizontal */
+    transform: translate(-50%, 0); /* Compensa la mitad del ancho */
+    margin-top: 20px; /* Ajusta el margen superior según tu diseño */
+  }
+  .contenedor-flex {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra horizontalmente */
+  }
+/* Contenedor del formulario */
+.formulario-login {
+  background-color: rgba(0, 0, 0, 0.5); /* Semitransparente */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Etiquetas de los campos */
+label {
+  display: block; /* Ocupa una línea completa */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #030000;
+  text-shadow:2px 2px 4px #f1f1f1;
+}
+
+/* Campos de texto */
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Ancho completo */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+  background-color: #007bff; /* Color azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Adaptación a smartphones */
+@media (max-width: 768px) {
+  .formulario-login {
+    width: 90%; /* Ocupa el 90% del ancho en smartphones */
+  }
+}
