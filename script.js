@@ -8,7 +8,7 @@ formulario.addEventListener('submit', (event) => {
   const contrasena = document.getElementById('contrasena').value;
 
   // Validación básica (reemplazar)
-  if (usuario === "admin" && contrasena === "6AkteZ4") {
+  if (usuario === "admin" && contrasena === "Kn2rd") {
     // Obtener datos de usuario (ejemplo ficticio)
     const nombreUsuario = "Juan Pérez";
     const datosUsuario = JSON.stringify({ // Serializar datos en formato JSON
@@ -21,7 +21,7 @@ formulario.addEventListener('submit', (event) => {
     document.getElementById('datosUsuario').value = datosUsuario;
 
     // Redirigir a la nueva página con datos
-    window.location.href = "Troubles-Shoutings-930.html"; // Cambiar por la URL real
+    window.location.href = "home.html"; // Cambiar por la URL real
     mensaje.textContent = "¡Inicio de sesión exitoso!"; // Mensaje opcional
   } else {
     mensaje.textContent = "Usuario o contraseña incorrectos.";
